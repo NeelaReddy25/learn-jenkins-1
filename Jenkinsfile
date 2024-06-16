@@ -29,7 +29,7 @@ pipeline {
                 sh 'sleep 10'
             }
         }
-        stages("print params") {
+        stage('print params') {
             steps {
                  echo "Hello ${params.PERSON}"
 
