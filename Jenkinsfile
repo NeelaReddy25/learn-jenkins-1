@@ -42,7 +42,6 @@ pipeline {
             steps {
                 sh 'echo This is Deploy'
                 echo "triggered test"
-                error 'some failure'
             }
         }
     }
