@@ -21,12 +21,12 @@ pipeline {
         stage('Build'){
             steps {
                 sh 'echo This is Build'
+                sh 'env'
             }
         } 
         stage('Test') {
             steps {
                 sh 'echo This is Test'
-                sh 'sleep 10'
             }
         }
         stage('print params') {
